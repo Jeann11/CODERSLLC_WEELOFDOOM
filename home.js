@@ -225,8 +225,8 @@ function spin() {
 
             let questionContainer = document.querySelector('#question-btn')
             questionContainer.innerHTML = `
-                <button class="tr" onclick="checkUserDecision(true,${picked})">true</button>
-                <button class="fs" onclick="checkUserDecision(false,${picked})">false</button>
+                <button class="btn-true" onclick="checkUserDecision(true,${picked})">true</button>
+                <button class="btn-false" onclick="checkUserDecision(false,${picked})">false</button>
                 `
 
 
@@ -275,36 +275,26 @@ function rotTween() {
     };
 }
 
-
-var True = document.getElementById("True");
-True = true
-
-var False = document.getElementById("False");
-False = false
-
-function answer() {
-    ver = true
-    if (ver === true && data ({answer}[12]) === true) {
-        return "True"
-    }
-    else {
-        return "False"
-    }
-}
-console.info ()
-
-
 function checkUserDecision(decision, question) {
+   
     if (decision === data[question].answer) {
         console.log("Congrats!! it´s the right answer");
         changeColor("green");
+        disabledBtnValidation();
         return ;
     }
 
     console.log("Sorry!! it´s the wrong answer");
     changeColor("red");
+    disabledBtnValidation();
+} 
 
-}  
+function disabledBtnValidation() {
+    let btnTrue = document.querySelector(".btn-true")
+    let btnFalse = document.querySelector(".btn-false")
+    btnTrue.disabled = true;
+    btnFalse.disabled = true;
+}
     // recuperar el objeto que Ñha salido (texto)
     
     //console.log (decision)

@@ -79,13 +79,13 @@ p {
     margin-left: 28%;
 }
 
-.tr {
+.btn-true {
     font-size: 40px;
     font-weight: bold;
     margin-top: 5%;
 }
 
-.fs {
+.btn-false {
     font-size: 40px;
     font-weight: bold;
 
