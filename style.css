@@ -1,21 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Kings&display=swap');
 
-
-
 body {
     background-color: #362b36;
     opacity: 0;
     transition: opacity .5s;
 }
+
 .container {
     background-image: url("/IMG/Home\ Page.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    height: 1400px;
+    height: 50%;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    
 }
+
 
 .enter-text {
     display: flex;
@@ -23,36 +22,36 @@ body {
     padding-top: 950px;
     color: white;
     font-size: 80px;
-    font-family:  'Kings', cursive;
+    font-family: 'Kings', cursive;
 }
-
-
-
 
 #home {
     background-color: #362b36;
 }
 
-#home text{
-    font-family:Helvetica, Arial, sans-serif;
-    font-size:30px;
-    pointer-events:none;
+#home text {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    pointer-events: none;
 }
-#chart{
-    position:absolute;
-    width:500px;
-    height:500px;
-    top:180px;
-    left:300px;
-}
-#question{
+
+#chart {
     position: absolute;
-    width:400px;
-    height:500px;
-    top:150px;
-    left:780px;
+    width: 500px;
+    height: 500px;
+    top: 180px;
+    left: 300px;
 }
-#question h1{
+
+#question {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    top: 150px;
+    left: 780px;
+}
+
+#question h1 {
     font-size: 50px;
     font-weight: bold;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -60,9 +59,35 @@ body {
     color: white;
     padding: 0;
     margin: 0;
-    top:50%;
-    -webkit-transform:translate(0, 50%);
-            transform:translate(150%, 50%);
+    top: 50%;
+    -webkit-transform: translate(0, 50%);
+    transform: translate(150%, 50%);
 }
 
+.titulo {
+    font-size: 280%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: beige;
+    margin-left: 28%;
+}
 
+p {
+    font-size: 220%;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: beige;
+    margin-left: 28%;
+}
+
+.tr {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.fs {
+    font-size: 40px;
+    font-weight: bold;
+
+
+}

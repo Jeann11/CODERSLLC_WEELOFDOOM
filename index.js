@@ -1,4 +1,4 @@
-window.alert ("Wheel of Doom is an Alpha. We hope to develop the next sprints soon. Sorry for the inconvenience.");
+window.alert ("Welcome for the Wheel of Doom.");
 
 var blink = document.getElementById('blink');
   
