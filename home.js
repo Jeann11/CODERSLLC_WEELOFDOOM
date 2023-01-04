@@ -225,10 +225,9 @@ function spin() {
 
             let questionContainer = document.querySelector('#question-btn')
             questionContainer.innerHTML = `
-                <button class="tr" onclick="checkUserDecision(true,${picked})">true</button>
-                <button class="fs" onclick="checkUserDecision(false,${picked})">false</button>
+                <button class="tr" onclick="changeColor('green');">true</button>
+                <button class="fs" onclick="changeColor('red');">false</button>
                 `
-
 
             //asignar a los button el evento que queremos
 
@@ -292,19 +291,3 @@ function answer() {
     }
 }
 console.info ()
-
-
-function checkUserDecision(decision, question) {
-    if (decision === data[question].answer) {
-        console.log("Congrats!! it´s the right answer");
-        changeColor("green");
-        return ;
-    }
-
-    console.log("Sorry!! it´s the wrong answer");
-    changeColor("red");
-
-}  
-    // recuperar el objeto que Ñha salido (texto)
-    
-    //console.log (decision)
